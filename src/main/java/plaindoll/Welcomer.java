@@ -15,4 +15,11 @@ public class Welcomer{
 	public String saySome(){
 		return "something in the way";
 	}
+	public String saySome(){
+		return "Ready to work, sir! Bereit zu arbeiten, Sir!";
+	}
+	// Новый метод для пункта 10 задания
+        public String getHunterReply() {
+                return "The hunter is always on the watch.";
+        }
 }
