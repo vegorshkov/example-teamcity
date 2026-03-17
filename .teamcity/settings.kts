@@ -45,7 +45,7 @@ object ExampleTeamcityBuild : BuildType({
             id = "Maven2"
 
             conditions {
-                doesNotEqual("vcsroot.branch", "master")
+                doesNotEqual("vcsroot.branch", "refs/heads/master")
             }
             goals = "clean test"
             runnerArgs = "-Dmaven.test.failure.ignore=true"
