@@ -35,6 +35,8 @@ project {
 object ExampleTeamcityBuild : BuildType({
     name = "example-teamcity-build"
 
+    artifactRules = "target/plaindoll-*.jar => plaindoll.jar"
+
     vcs {
         root(DslContext.settingsRoot)
     }
